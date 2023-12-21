@@ -20,16 +20,16 @@ export const ContactCard = ({ item, index, actions }) => {
             <div className="col-md-8 col-sm-6 col-lg-7 infoContainer">
                 <div className="infoContainer">
                     <h3>{item.full_name}</h3>
-                    <div className="fw-semibold text-secondary fs-5"><i class="fa-solid fa-location-dot me-2"></i>{item.address}</div>
-                    <div className=" text-secondary"><i class="fa-solid fa-phone me-2"></i>{`(${item.phone.slice(0, 3)}) ${item.phone.slice(3, 6)}-${item.phone.slice(6)}`}</div>
-                    <div className="text-secondary"><i class="fa-solid fa-envelope me-2"></i>{item.email}</div>
+                    <div className="fw-semibold text-secondary fs-5">{item.address}</div>
+                    <div className=" text-secondary">{`(${item.phone.slice(0, 3)}) ${item.phone.slice(3, 6)}-${item.phone.slice(6)}`}</div>
+                    <div className="text-secondary">{item.email}</div>
                 </div>
             </div>
 
 
             {/* Edit and delete icons */}
             <div className=" col-lg-1 col-md-3 col-sm-6 d-flex iconsContainer " >
-                <i className="fa-solid fa-pencil iconBtn " data-bs-toggle="modal" data-bs-target={`#editUser${index}`} ></i>
+                <i className="a " data-bs-toggle="modal" data-bs-target={`#editUser${index}`} ></i>
                 <i className="fa-solid fa-trash-can iconBtn " data-bs-toggle="modal" data-bs-target={`#deleteUser${index}`} > </i>
 
             </div>
