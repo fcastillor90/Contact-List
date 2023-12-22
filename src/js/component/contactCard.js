@@ -30,8 +30,8 @@ export const ContactCard = ({ item, index, actions }) => {
 
             {/* Edit and delete icons */}
             <div className=" col-lg-1 col-md-3 col-sm-6 d-flex iconsContainer " >
-                <i className="fa-solid fa-pencil iconBtn " data-bs-toggle="modal" data-bs-target={`#editUser${index}`} ></i>
-                <i className="fa-solid fa-trash iconBtn " data-bs-toggle="modal" data-bs-target={`#deleteUser${index}`} > </i>
+                <i className="fa-solid fa-pencil iconBtn " data-bs-toggle="modal" data-bs-target={`#editUser${index}`} > E </i>
+                <i className="fa-solid fa-trash iconBtn " data-bs-toggle="modal" data-bs-target={`#deleteUser${index}`} > X </i>
             </div>
 
 
