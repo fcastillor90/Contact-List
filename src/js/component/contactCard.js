@@ -1,4 +1,5 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export const ContactCard = ({ item, index, actions }) => {
     // Extracting the first two numbers of the ID to have different identifiers
@@ -30,8 +31,7 @@ export const ContactCard = ({ item, index, actions }) => {
             {/* Edit and delete icons */}
             <div className=" col-lg-1 col-md-3 col-sm-6 d-flex iconsContainer " >
                 <i className="fa-solid fa-pencil iconBtn " data-bs-toggle="modal" data-bs-target={`#editUser${index}`} ></i>
-                <i className="fa-solid fa-trash-can iconBtn " data-bs-toggle="modal" data-bs-target={`#deleteUser${index}`} > </i>
-
+                <i className="fa-solid fa-trash iconBtn " data-bs-toggle="modal" data-bs-target={`#deleteUser${index}`} > </i>
             </div>
 
 
